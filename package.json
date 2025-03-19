@@ -10,10 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Inthetouch/fullstack-javascript-project-44.git"
   },
-  "author": "",
+  "author": "Inthetouch",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Inthetouch/fullstack-javascript-project-44/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/Inthetouch/fullstack-javascript-project-44#readme"
 }
