@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import isEven from '../bin/brain-even.js';
+import askName from '../src/cli.js';
 
 console.log('Welcome to the Brain Games!');
-isEven();
+const name = askName();
+console.log(`Hello, ${name}!`); 

@@ -5,4 +5,4 @@ function askName() {
   return name;
 }
 
-export { askName };
+export default askName;
