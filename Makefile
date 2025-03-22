@@ -9,3 +9,7 @@ make brain-games:
 # Запуск команды publish
 publish:
 	npm publish --dry-run
+
+# Запуск линтера
+make lint:
+	npx eslint .
