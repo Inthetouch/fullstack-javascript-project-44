@@ -9,3 +9,6 @@
 
 ### Brain-calc
 Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/Pkeu0p6fhTJpqtgeIrZTluK6F).
+
+### Brain-gcd
+Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/NKx6FRIrAQBcuZKcyINHGimBh).
