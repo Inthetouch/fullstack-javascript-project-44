@@ -12,3 +12,6 @@
 
 ### Brain-gcd
 Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/NKx6FRIrAQBcuZKcyINHGimBh).
+
+### Brain-progression
+Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/CaJlQZlMRRAcXtOyi2Ufe8PS3).
