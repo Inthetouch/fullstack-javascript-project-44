@@ -7,7 +7,7 @@ function isEven(name) {
   let countAnswer = 0;
   while (countAnswer < 3) {
     const num = Math.floor(Math.random() * 100);
-    console.log('Question: ' + num);
+    console.log(`Question: ${num}`);
     const answer = readLineSync.question('Your answer: ');
 
     if (answer === 'yes' && num % 2 === 0) {
