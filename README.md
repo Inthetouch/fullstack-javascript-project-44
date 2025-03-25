@@ -15,3 +15,6 @@
 
 ### Brain-progression
 Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/CaJlQZlMRRAcXtOyi2Ufe8PS3).
+
+### Brain-prime
+Запись запуска игры, победы и поражения [здесь](https://asciinema.org/a/1iBCSuyiREtvOmXQ5EcsfEcyd).
