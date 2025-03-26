@@ -1,4 +1,5 @@
 import readLineSync from 'readline-sync';
+import askName from '../src/cli.js';
 
 function algEvklid(a, b) {
   while (b !== 0) {
@@ -9,7 +10,10 @@ function algEvklid(a, b) {
   return a;
 }
 
-function gameNod (name) {
+function gameNod () {
+
+  const name = askName();
+
   console.log("Find the greatest common divisor of given numbers.");
 
   let countAnswer = 0;
@@ -34,4 +38,4 @@ function gameNod (name) {
   }
 }
 
-export default gameNod;
+gameNod();

@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import askName from '../src/cli.js';
 
 function genProgression() {
   const progression = [];
@@ -20,7 +21,10 @@ function hideElement(progression) {
   return { question: progression.join(' '), answer: hiddenElement };
 }
 
-function gameProgression(name) {
+function gameProgression() {
+
+  const name = askName();
+
   console.log("What number is missing in the progression?");
 
   let countAnswer = 0;
@@ -39,6 +43,10 @@ function gameProgression(name) {
       break;
     };
   };
+
+  if (countAnswer === 3) {
+    console.log(`Congratulations, ${name}!`);
+  };
 }
 
-export default gameProgression;
+gameProgression();

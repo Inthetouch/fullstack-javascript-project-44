@@ -1,7 +1,10 @@
 import readLineSync from 'readline-sync';
+import askName from '../src/cli.js';
 
-function isEven(name) {
-    
+function isEven() {
+  
+  const name = askName();
+
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let countAnswer = 0;
@@ -28,4 +31,4 @@ function isEven(name) {
   };
 }
 
-export default isEven;
+isEven();

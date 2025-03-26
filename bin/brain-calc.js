@@ -1,4 +1,5 @@
 import readLineSync from 'readline-sync';
+import askName from '../src/cli.js';
 
 function calculation(numOne, numTwo, operator) {
   let result = 0;
@@ -16,7 +17,10 @@ function calculation(numOne, numTwo, operator) {
   return result
 }
 
-function calcGame(name) {
+function calcGame() {
+
+  const name = askName();
+
   console.log("What is the result of the expression?");
 
   let countAnswer = 0;
@@ -47,4 +51,4 @@ function calcGame(name) {
   } 
 }
 
-export default calcGame;
+calcGame();

@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import askName from '../src/cli.js';
 
 function isSimple(num) {
   if (num <= 1) { return false };
@@ -14,7 +15,10 @@ function isSimple(num) {
   return true;
 }
 
-function gamePrime(name) {
+function gamePrime() {
+
+  const name = askName();
+
   console.log("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
   let countAnswer = 0;
@@ -39,4 +43,4 @@ function gamePrime(name) {
   };
 }
 
-export default gamePrime;
+gamePrime();
