@@ -31,5 +31,5 @@ publish:
 	npm publish --dry-run
 
 # Запуск линтера
-make lint:
+lint:
 	npx eslint .
