@@ -1,11 +1,16 @@
-import { defineConfig } from "eslint/config";
 import globals from "globals";
-import js from "@eslint/js";
 
+import path from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
+import pluginJs from "@eslint/js";
 
-export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs}"] },
-  { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
-  { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.node } },
-  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"] },
-]);
+// mimic CommonJS variables -- not needed if using CommonJS
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended});
+
+export default [
+  {languageOptions: { globals: globals.node }},
+  ...compat.extends("airbnb"),
+];

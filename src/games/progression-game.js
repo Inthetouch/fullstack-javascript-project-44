@@ -6,11 +6,11 @@ function genProgression() {
   const start = Math.floor(Math.random() * 20) + 1;
   const step = Math.floor(Math.random() * 5) + 1;
 
-  for (let i = 0; i < length; i += 1) { 
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + step * i);
-  };
+  }
 
-  return progression
+  return progression;
 }
 
 function hideElement(progression) {

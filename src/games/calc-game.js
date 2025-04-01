@@ -2,7 +2,7 @@ const calcDescription = 'What is the result of the expression?';
 
 function calculation(numOne, numTwo, operator) {
   let result = 0;
-  switch(operator) {
+  switch (operator) {
     case '+':
       result = numOne + numTwo;
       break;
@@ -12,8 +12,8 @@ function calculation(numOne, numTwo, operator) {
     case '*':
       result = numOne * numTwo;
       break;
-  };
-  return result
+  }
+  return result;
 }
 
 function calcGame() {
@@ -22,6 +22,6 @@ function calcGame() {
   const operator = ['+', '-', '*'][Math.floor(Math.random() * 3)];
   const result = calculation(numberOne, numberTwo, operator);
   return { question: `${numberOne} ${operator} ${numberTwo}`, answer: String(result) };
-};
+}
 
 export { calcDescription, calcGame };
