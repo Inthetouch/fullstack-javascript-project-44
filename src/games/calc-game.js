@@ -12,6 +12,7 @@ function calculation(numOne, numTwo, operator) {
     case '*':
       result = numOne * numTwo;
       break;
+    default:
   }
   return result;
 }

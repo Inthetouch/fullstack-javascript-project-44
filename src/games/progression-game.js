@@ -14,10 +14,11 @@ function genProgression() {
 }
 
 function hideElement(progression) {
-  const hideIndex = Math.floor(Math.random() * progression.length);
-  const hiddenElement = progression[hideIndex];
-  progression[hideIndex] = '..';
-  return { question: progression.join(' '), answer: hiddenElement };
+  let array = [...progression];
+  const hideIndex = Math.floor(Math.random() * array.length);
+  const hiddenElement = array[hideIndex];
+  array[hideIndex] = '..';
+  return { question: array.join(' '), answer: hiddenElement };
 }
 
 function progressionGame() {
