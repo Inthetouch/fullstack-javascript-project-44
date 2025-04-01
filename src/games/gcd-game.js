@@ -1,12 +1,12 @@
 const gcdDescription = 'Find the greatest common divisor of given numbers.';
 
-function algEvklid(a, b) {
-  while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+function algEvklid(numOne, numTwo) {
+  while (numTwo !== 0) {
+    const temp = numTwo;
+    numTwo = numOne % numTwo;
+    numOne = temp;
   }
-  return a;
+  return numOne;
 }
 
 function gcdGame() {
