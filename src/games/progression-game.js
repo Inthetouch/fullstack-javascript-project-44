@@ -14,7 +14,7 @@ function genProgression() {
 }
 
 function hideElement(progression) {
-  let array = [...progression];
+  const array = [...progression];
   const hideIndex = Math.floor(Math.random() * array.length);
   const hiddenElement = array[hideIndex];
   array[hideIndex] = '..';
